@@ -29,5 +29,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
       - Client will not need to perform another query
       - If large data sets, will be detrimental to client performance, not very scalable
   - This will resolve CORS issues
-  - Time Spent: 4 hours
-    - Most time spent trying to solve CORS/proxy problem
+- Time Spent: 4 hours
+  - Most time spent trying to solve CORS/proxy problem

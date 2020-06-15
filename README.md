@@ -14,6 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - I would have the server format a Geojson response
 - Support dynamic data display instead of hard coded
   - Iterate over all keys and pretty format JSON in popups instead of specifying the keys
+- Prettify the Attribute Data
 - Data Enrichment
   - Determine with the product's client, which hourly data from the incident we want to join with the weather
     - event_closed, event_opened, first_unit_arrived, first_unit_dispatched, or first_unit_enroute

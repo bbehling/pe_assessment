@@ -1,0 +1,23 @@
+/*
+  Need to import leaflet.css here and not in angular.json styles prop
+  so the stylesheet will be compiled when in production mode
+*/
+
+@import "../node_modules/leaflet/dist/leaflet.css";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.leaflet-popup-content-wrapper {
+  overflow: auto;
+}

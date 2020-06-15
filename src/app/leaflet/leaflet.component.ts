@@ -45,6 +45,7 @@ export class LeafletComponent implements OnInit {
     });
 
     data.forEach((incident) => {
+      debugger;
       L.marker(
         [incident["address"]["latitude"], incident["address"]["longitude"]],
         { icon: icon }
@@ -64,6 +65,8 @@ export class LeafletComponent implements OnInit {
           Fire Department Properties: <pre>${JSON.stringify(
             incident["fire_department"]
           )}</pre>
+          <br>
+          Weather: <pre>${JSON.stringify(incident["weather"])}</pre>
           <br>
           Version: <pre>${JSON.stringify(incident["version"])}</pre>`
         );

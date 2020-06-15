@@ -19,10 +19,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - event_closed, event_opened, first_unit_arrived, first_unit_dispatched, or first_unit_enroute
     - or show average weather conditions for that day
     - or show the weather over the entire range of time of the incident
-    - Do this on the server
-      - Write a process that will join incident data to weather
-      - This speed up performance on client
-        - Client will not need to perform another query
-        - If large data sets, will be detrimental to client performance, not very scalable
+  - Do this on the server
+    - Write a process that will join incident data to weather
+    - This speed up performance on client
+      - Client will not need to perform another query
+      - If large data sets, will be detrimental to client performance, not very scalable
 - Time Spent: 4 hours
   - Most time spent trying to solve CORS/proxy problem

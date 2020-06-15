@@ -33,7 +33,7 @@ export class LeafletComponent implements OnInit {
 
   getData = () => {
     const data = this.mapService.getData();
-    //this.setMarkers(data);
+    this.setMarkers(data);
   };
 
   setMarkers(data) {
@@ -70,6 +70,12 @@ export class LeafletComponent implements OnInit {
           <br>
           Version: <pre>${JSON.stringify(incident["version"])}</pre>`
         );
+
+      markerArray.push([
+        incident["address"]["latitude"],
+        incident["address"]["longitude"],
+      ]);
     });
+    this.map.fitBounds(markerArray);
   }
 }

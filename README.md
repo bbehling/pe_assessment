@@ -28,3 +28,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - Speed up performance on client
       - Client will not need to perform another query
       - If large data sets, will be detrimental to client performance, not very scalable
+  - This will resolve CORS issues

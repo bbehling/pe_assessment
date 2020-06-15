@@ -1,0 +1,9 @@
+{
+  "/api": {
+    "target": "https://api.meteostat.net",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

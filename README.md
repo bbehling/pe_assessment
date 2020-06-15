@@ -12,6 +12,3 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - Format the data as Geojson
   - I would have the server format a Geojson response
-- I reused an existing Leaflet Components app to save time
-  - This manually bootstrapped the app
-  - Start from scratch using a non-manually bootstrapped app

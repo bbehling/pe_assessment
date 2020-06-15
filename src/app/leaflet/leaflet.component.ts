@@ -64,11 +64,11 @@ export class LeafletComponent implements OnInit {
             1
           )}</pre>
           <br>
-          Description Properties: <pre>${JSON.stringify(
+          Description Properties: <pre><span>${JSON.stringify(
             incident["description"],
             null,
             1
-          )}</pre>
+          )}</span></pre>
           <br>
           Fire Department Properties: <pre>${JSON.stringify(
             incident["fire_department"],

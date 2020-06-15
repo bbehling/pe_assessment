@@ -1,6 +1,6 @@
 {
   "/v2": {
-    "target": "https://api.meteostat.net",
+    "target": "api.meteostat.net",
     "secure": true,
     "changeOrigin": true,
     "pathRewrite": {

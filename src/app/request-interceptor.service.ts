@@ -6,7 +6,6 @@ import {
   HttpInterceptor,
 } from "@angular/common/http";
 import { Observable } from "rxjs";
-import { catchError } from "rxjs/operators";
 @Injectable()
 export class RequestInterceptorService implements HttpInterceptor {
   constructor() {}
@@ -19,7 +18,7 @@ export class RequestInterceptorService implements HttpInterceptor {
         "x-api-key": `L6BosLncdjpYWmpKXMgUb!BT0BC=emMU`,
       },
     });
-    debugger;
+
     return next.handle(request);
   }
 }

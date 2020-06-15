@@ -1,5 +1,5 @@
 {
-  "name": "leaflet-component",
+  "name": "pe-assesment",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,9 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "serve:elements": "http-server ./elements/",
-    "build:elements": "ng build --prod --output-hashing none && node concatenate.js"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

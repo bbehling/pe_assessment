@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import * as data1 from "../../data/F01705150050.json";
 import * as data2 from "../../data/F01705150090.json";
 import { map } from "rxjs/operators";

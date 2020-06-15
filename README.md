@@ -26,5 +26,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
     - This speed up performance on client
       - Client will not need to perform another query
       - If large data sets, will be detrimental to client performance, not very scalable
+- Only import the libraries needed from Leaflet
 - Time Spent: 4 hours
   - Most time spent trying to solve CORS/proxy problem

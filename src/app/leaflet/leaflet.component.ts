@@ -31,8 +31,9 @@ export class LeafletComponent implements OnInit {
   }
 
   getData = () => {
-    const data = this.mapService.getData();
-    this.setMarkers(data);
+    const data = this.mapService.getData().subscribe((data) => {
+      this.setMarkers(data);
+    });
   };
 
   setMarkers(data) {

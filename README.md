@@ -14,20 +14,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - I would have the server format a Geojson response
 - Support dynamic data display instead of hard coded
   - Iterate over all keys and pretty format JSON in popups instead of specifying the keys
-- Determine with the product's client, which hourly data from the incident we want to join with the weather
-  - event_closed, event_opened, first_unit_arrived, first_unit_dispatched, or first_unit_enroute
-  - or show average weather conditions for that day
-  - or show the weather over the entire range of time of the incident
-- Resolve issues with CORS
-  - Angular proxy conf is supposed to fix this, but URL re-writting is not working so far
-  - Create a reverse proxy
-  - access-control-allow-origin: \* are returned from server
 - Data Enrichment
-  - Do this on the server
-  - Write a process that will join incident data to weather
-    - Speed up performance on client
-      - Client will not need to perform another query
-      - If large data sets, will be detrimental to client performance, not very scalable
-  - This will resolve CORS issues
+  - Determine with the product's client, which hourly data from the incident we want to join with the weather
+    - event_closed, event_opened, first_unit_arrived, first_unit_dispatched, or first_unit_enroute
+    - or show average weather conditions for that day
+    - or show the weather over the entire range of time of the incident
+    - Do this on the server
+      - Write a process that will join incident data to weather
+      - This speed up performance on client
+        - Client will not need to perform another query
+        - If large data sets, will be detrimental to client performance, not very scalable
 - Time Spent: 4 hours
   - Most time spent trying to solve CORS/proxy problem

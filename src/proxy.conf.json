@@ -1,10 +1,10 @@
 {
-  "/v2": {
+  "/v2/*": {
     "target": "https://api.meteostat.net",
     "secure": true,
     "changeOrigin": true,
-    "pathRewrite": {
-      "^/v2": ""
+    "headers": {
+      "x-api-key": "L6BosLncdjpYWmpKXMgUb!BT0BC=emMU"
     }
   }
 }

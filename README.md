@@ -10,8 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Improvements
 
-- Format the data as Geojson
-  - I would have the server format a Geojson response
+- Format the data as Geojson as a server response
 - Support dynamic data display instead of hard coded
   - Iterate over all keys and pretty format JSON in popups instead of specifying the keys
 - Prettify the Attribute Data

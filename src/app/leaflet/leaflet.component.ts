@@ -55,28 +55,28 @@ export class LeafletComponent implements OnInit {
           `Address Properties: <pre>${JSON.stringify(
             incident["address"],
             null,
-            4
+            1
           )}</pre>
           <br>
           Apparatus Properties: <pre>${JSON.stringify(
             incident["apparatus"],
             null,
-            4
+            1
           )}</pre>
           <br>
           Description Properties: <pre>${JSON.stringify(
             incident["description"],
             null,
-            4
+            1
           )}</pre>
           <br>
           Fire Department Properties: <pre>${JSON.stringify(
             incident["fire_department"],
             null,
-            4
+            1
           )}</pre>
           <br>
-          Weather: <pre>${JSON.stringify(incident["weather"], null, 4)}</pre>
+          Weather: <pre>${JSON.stringify(incident["weather"], null, 1)}</pre>
           <br>
           Version: <pre>${JSON.stringify(incident["version"])}</pre>`
         );

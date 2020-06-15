@@ -36,8 +36,6 @@ export class LeafletComponent implements OnInit {
   };
 
   setMarkers(data) {
-    // HACK - have to use require to load icon URL due to webpack rewiring URLs
-    // https://stackoverflow.com/questions/56411497/leaflet-marker-not-found-production-env-angular-7
     let markerArray = [];
 
     const icon: any = L.icon({
@@ -47,7 +45,7 @@ export class LeafletComponent implements OnInit {
     });
 
     data.forEach((incident) => {
-      var marker = L.marker(
+      L.marker(
         [incident["address"]["latitude"], incident["address"]["longitude"]],
         { icon: icon }
       )

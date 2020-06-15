@@ -52,18 +52,28 @@ export class LeafletComponent implements OnInit {
       )
         .addTo(this.map)
         .bindPopup(
-          `Address Properties: <pre>${JSON.stringify(incident["address"])}</pre>
+          `Address Properties: <pre>${JSON.stringify(
+            incident["address"],
+            null,
+            4
+          )}</pre>
           <br>
           Apparatus Properties: <pre>${JSON.stringify(
-            incident["apparatus"]
+            incident["apparatus"],
+            null,
+            4
           )}</pre>
           <br>
           Description Properties: <pre>${JSON.stringify(
-            incident["description"]
+            incident["description"],
+            null,
+            4
           )}</pre>
           <br>
           Fire Department Properties: <pre>${JSON.stringify(
-            incident["fire_department"]
+            incident["fire_department"],
+            null,
+            4
           )}</pre>
           <br>
           Weather: <pre>${JSON.stringify(incident["weather"])}</pre>

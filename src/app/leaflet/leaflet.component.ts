@@ -76,7 +76,7 @@ export class LeafletComponent implements OnInit {
             4
           )}</pre>
           <br>
-          Weather: <pre>${JSON.stringify(incident["weather"])}</pre>
+          Weather: <pre>${JSON.stringify(incident["weather"], null, 4)}</pre>
           <br>
           Version: <pre>${JSON.stringify(incident["version"])}</pre>`
         );

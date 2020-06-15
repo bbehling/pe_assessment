@@ -21,4 +21,5 @@ body {
 .leaflet-popup-content-wrapper {
   overflow: auto;
   height: 300px;
+  word-wrap: break-word !important;
 }

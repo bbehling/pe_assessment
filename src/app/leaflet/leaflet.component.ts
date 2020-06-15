@@ -36,5 +36,40 @@ export class LeafletComponent implements OnInit {
     //this.setMarkers(data);
   };
 
-  setMarkers(data) {}
+  setMarkers(data) {
+    // HACK - have to use require to load icon URL due to webpack rewiring URLs
+    // https://stackoverflow.com/questions/56411497/leaflet-marker-not-found-production-env-angular-7
+    let markerArray = [];
+
+    const icon: any = L.icon({
+      iconUrl:
+        "https://cdn.jsdelivr.net/gh/bbehling/leafletNgWebComponent/elements/marker-icon-2x.png",
+      iconSize: [27, 37],
+    });
+
+    data.forEach((incident) => {
+      var marker = L.marker(
+        [incident["address"]["latitude"], incident["address"]["longitude"]],
+        { icon: icon }
+      )
+        .addTo(this.map)
+        .bindPopup(
+          `Address Properties: <pre>${JSON.stringify(incident["address"])}</pre>
+          <br>
+          Apparatus Properties: <pre>${JSON.stringify(
+            incident["apparatus"]
+          )}</pre>
+          <br>
+          Description Properties: <pre>${JSON.stringify(
+            incident["description"]
+          )}</pre>
+          <br>
+          Fire Department Properties: <pre>${JSON.stringify(
+            incident["fire_department"]
+          )}</pre>
+          <br>
+          Version: <pre>${JSON.stringify(incident["version"])}</pre>`
+        );
+    });
+  }
 }

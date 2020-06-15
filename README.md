@@ -21,6 +21,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Resolve issues with CORS
   - Angular proxy conf is supposed to fix this, but URL re-writting is not working so far
   - Create a reverse proxy
+  - access-control-allow-origin: \* are returned from server
 - Data Enrichment
   - Do this on the server
   - Write a process that will join incident data to weather

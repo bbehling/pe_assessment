@@ -11,10 +11,9 @@ export class MapService {
   constructor(private http: HttpClient) {}
 
   getData() {
-    debugger;
-    //const weatherData = this.getWeatherData().subscribe((response) => {
-    //  debugger;
-    //});
+    const weatherData = this.getWeatherData().subscribe((response) => {
+      debugger;
+    });
     let data = [];
 
     let newData1 = (data1 as any).default;
@@ -29,6 +28,12 @@ export class MapService {
   }
 
   getWeatherData() {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        "x-api-key": "L6BosLncdjpYWmpKXMgUb!BT0BC=emMU",
+      }),
+    };
+
     const headers = new HttpHeaders().set(
       "x-api-key",
       "L6BosLncdjpYWmpKXMgUb!BT0BC=emMU"
@@ -36,8 +41,7 @@ export class MapService {
     return this.http.get(
       //http://localhost:4200/api
       //https://api.meteostat.net/v2/stations/hourly?station=10637&start=2020-02-01&end=2020-02-04
-      "https://api.meteostat.net/api/v2/stations/hourly?station=10637&start=2020-02-01&end=2020-02-04",
-      { headers }
+      "https://api.meteostat.net/v2/stations/hourly?station=72401&start=2015-05-15&end=2015-05-15"
     );
   }
 }

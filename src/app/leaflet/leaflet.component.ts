@@ -45,7 +45,6 @@ export class LeafletComponent implements OnInit {
     });
 
     data.forEach((incident) => {
-      debugger;
       L.marker(
         [incident["address"]["latitude"], incident["address"]["longitude"]],
         { icon: icon }
